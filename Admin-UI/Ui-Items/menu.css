@@ -1,0 +1,170 @@
+/*
+*  html5 doctor css reset | http://html5doctor.com/html-5-reset-stylesheet
+*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #d7d7d7;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  font-weight: normal;
+  font-family: "Droid Sans", sans-serif, Arial;
+  color: #4f3b3b; }
+
+@font-face {
+  font-family: 'liga';
+  src: url("../font/websymbolsligaregular-webfont-webfont.eot");
+  src: url("../font/websymbolsligaregular-webfont-webfont.eot?#iefix") format("embedded-opentype"), url("../font/websymbolsligaregular-webfont-webfont.woff") format("woff"), url("../font/websymbolsligaregular-webfont-webfont.ttf") format("truetype"), url("../font/websymbolsligaregular-webfont-webfont.svg#web_symbols_ligaregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+.menu-bar-vertical {
+  max-width: 320px;
+  -webkit-box-shadow: 1px 1px 3px #777;
+  -moz-box-shadow: 1px 1px 3px #777;
+  box-shadow: 1px 1px 3px #777; }
+
+.search-list {
+  width: 320px;
+  background-color: #CCEBC0;
+  padding-left: 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative; }
+
+.search-list span + input {
+  outline: none;
+  border: none;
+  color: #111;
+  background-color: inherit;
+  font-size: 18px;
+  margin-left: 30px;
+  width: 80%;
+  padding: 20px 15px; }
+
+.search-list > span {
+  font-family: 'liga';
+  font-size: 20px;
+  color: #59AE7F;
+  line-height: 49px; }
+
+.search-list > span:nth-child(1) {
+  display: block;
+  position: absolute;
+  text-align: center;
+  line-height: 25px;
+  left: 0;
+  bottom: -17px;
+  width: 100%;
+  color: #CCEBC0; }
+
+.search-list > span:nth-child(2) {
+  position: absolute;
+  top: 5px;
+  font-size: 25px; }
+
+.ui_navlist {
+  width: 320px;
+  background-color: #59AE7F; }
+
+.ui_navlist img {
+  display: block;
+  float: left;
+  border: 5px solid;
+  border-color: #666;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  margin-left: 10px; }
+
+.ui_navlist li {
+  overflow: hidden;
+  border-bottom: 1px solid #666; }
+
+.ui_navlist a {
+  display: block;
+  overflow: hidden;
+  color: #111;
+  width: 100%;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 20px 0;
+  text-decoration: none;
+  -webkit-transition: all 0.55s ease;
+  -moz-transition: all 0.55s ease;
+  -o-transition: all 0.55s ease;
+  transition: all 0.55s ease; }
+
+.ui_navlist a:hover {
+  background-color: #91CED7; }
+
+.ui_navlist p {
+  overflow: hidden;
+  font-size: 15px;
+  padding-top: 12px;
+  padding-left: 5px; }
+
+/*# sourceMappingURL=menu.css.map */

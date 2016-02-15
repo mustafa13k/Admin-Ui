@@ -1,0 +1,258 @@
+/*
+*  html5 doctor css reset | http://html5doctor.com/html-5-reset-stylesheet
+*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #d7d7d7;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  font-weight: normal;
+  font-family: "Droid Sans", sans-serif, Arial !important;
+  color: #4f3b3b;
+  z-index: 1; }
+
+#colTwo {
+  position: absolute;
+  display: table;
+  float: left;
+  width: 100%;
+  height: 100%;
+  padding-top: 40px;
+  z-index: -1;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+#colTwo > div {
+  display: table-cell;
+  vertical-align: top;
+  height: 100%; }
+
+#side_open {
+  display: none; }
+
+@media screen and (max-width: 900px) {
+  #colTwo, #colTwo > div {
+    display: block; }
+
+  #colTwo #menu_side, html#events #menu_side, html#eventp #menu_side {
+    float: left;
+    width: 100%;
+    height: auto; }
+
+  #sub_menu {
+    display: none; }
+
+  #side_open {
+    display: block;
+    width: 100%;
+    float: left;
+    text-align: center;
+    line-height: 50px;
+    color: #4f3b3b;
+    background: #f0e9dd;
+    text-decoration: none;
+    border-bottom: 1px solid #bdbbdb;
+    font-size: 16px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
+
+  #side_open span {
+    font-family: 'liga';
+    position: absolute;
+    left: 25px;
+    font-size: 20px; }
+
+  #side_open:hover {
+    background-color: #f4d37a; }
+
+  #sub_menu.sub_open {
+    display: block; } }
+@font-face {
+  font-family: 'liga';
+  src: url("../font/websymbolsligaregular-webfont-webfont.eot");
+  src: url("../font/websymbolsligaregular-webfont-webfont.eot?#iefix") format("embedded-opentype"), url("../font/websymbolsligaregular-webfont-webfont.woff") format("woff"), url("../font/websymbolsligaregular-webfont-webfont.ttf") format("truetype"), url("../font/websymbolsligaregular-webfont-webfont.svg#web_symbols_ligaregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+#header-open {
+  display: none; }
+
+#header {
+  float: left;
+  width: 100%;
+  background-color: #4f3b3b;
+  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); }
+
+#header a {
+  display: inline-block;
+  float: left;
+  text-decoration: none;
+  padding: 0 15px;
+  line-height: 40px;
+  color: #fff;
+  font-size: 16px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+
+#header a:hover {
+  background-color: #f4d37a;
+  color: #4f3b3b; }
+
+#header a:first-child {
+  margin-left: 20px; }
+
+#header a:last-child {
+  float: right;
+  padding-right: 20px;
+  margin-right: 20px; }
+
+#header span {
+  font-family: 'liga';
+  display: inline-block;
+  padding-right: 7px; }
+
+#header em {
+  display: inline-block;
+  position: absolute;
+  background-color: #e56655;
+  padding: 0 3px;
+  font-size: 9px;
+  font-weight: 600;
+  margin-left: -13px;
+  margin-top: 8px;
+  text-align: center;
+  line-height: 12px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  font-style: normal; }
+
+@media screen and (max-width: 600px) {
+  #header-open {
+    line-height: 150%;
+    display: block;
+    width: 100%;
+    background-color: #361c12;
+    padding: 10 10 14px 10px;
+    color: #fff;
+    clear: both;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
+
+  #header {
+    display: none; }
+
+  #header-open span {
+    display: block;
+    color: #fff;
+    font-family: 'liga';
+    font-size: 25px; }
+
+  #header.sub_open {
+    display: block;
+    position: relative;
+    z-index: 8;
+    background: #4f3b3b;
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+    transition: background-color 0.3s; }
+
+  #header.sub_open:hover {
+    background: #4f3b3b; }
+
+  #header.sub_open a {
+    display: block;
+    width: 100%;
+    float: left;
+    padding-left: 25px;
+    padding: 5px 0 5px 25px;
+    margin: 0;
+    color: #fff; }
+
+  #header.sub_open a:hover {
+    color: #4f3b3b; }
+
+  #header.sub_open a:first-child {
+    margin-top: 30px; }
+
+  #header.sub_open a:last-child {
+    margin-bottom: 30px; } }
+
+/*# sourceMappingURL=header.css.map */

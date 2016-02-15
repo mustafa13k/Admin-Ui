@@ -1,0 +1,120 @@
+@import '../import';
+
+#header-open{
+	display:none;
+}
+
+
+
+#header{
+	float:left;
+	width:100%;
+	background-color:$brown;
+	@include boxShadow(1px 1px 5px rgba(0,0,0,.5));
+
+}
+
+#header a{
+	display:inline-block;
+	float:left;
+	text-decoration:none;
+	padding:0 15px;
+	line-height:40px;
+	color:$textTwo;
+	font-size:16px;
+	@include transition(all .3s);
+}
+
+#header a:hover{
+	background-color:$yellow;
+	color:$brown;
+}
+#header a:first-child{
+	margin-left:20px;
+}
+#header a:last-child{
+	float:right;
+	padding-right:20px;
+	margin-right: 20px;
+}
+
+#header span{
+	font-family:'liga';
+	display:inline-block;
+	padding-right:7px;
+}
+
+#header em{
+	display:inline-block;
+	position:absolute;
+	background-color:$red;
+    padding: 0 3px;
+    font-size: 9px;
+    font-weight: 600;
+    margin-left: -13px;
+    margin-top: 8px;
+    text-align: center;
+    line-height: 12px;
+	@include borderRadius(2px);
+	@include boxShadow(1px 1px 2px rgba(0,0,0,.7));
+	font-style:normal;
+}
+
+@media screen and (max-width:600px){
+	#header-open{
+		line-height: 150%;
+		display: block;
+		width:100%;
+		background-color:$darkBrown;
+		padding:10 10 14px 10px;
+		color:$textTwo;
+		clear:both;
+		@include transition(all .3s);
+	}
+
+	#header{
+		display: none;
+	}
+	#header-open span{
+		display: block;
+		color:$textTwo;
+		font-family: 'liga';
+		font-size: 25px;
+	}
+	#header a{
+		
+	}
+	#header.sub_open{
+		display: block;
+		position:relative;
+		z-index: 8;
+		background: $brown;
+		@include transition(background-color .3s);
+	}
+
+	#header.sub_open:hover{
+		background: $brown;
+	}
+
+	#header.sub_open a{
+		display: block;
+		width: 100%;
+		float:left;
+		padding-left:25px;
+		padding:5px 0 5px 25px;
+		margin: 0;
+		color:$textTwo;
+
+		
+	}
+	#header.sub_open a:hover{
+		color:$brown;
+	}
+	#header.sub_open a:first-child{
+		margin-top: 30px;
+	}
+	#header.sub_open a:last-child{
+		// border-bottom: 1px solid $darkBrown;
+		margin-bottom:30px;
+	}
+}

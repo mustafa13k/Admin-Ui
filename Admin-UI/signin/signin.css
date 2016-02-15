@@ -1,0 +1,141 @@
+/*
+*  html5 doctor css reset | http://html5doctor.com/html-5-reset-stylesheet
+*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #d7d7d7;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  font-weight: normal;
+  font-family: "Droid Sans", sans-serif, Arial;
+  color: #4f3b3b; }
+
+@font-face {
+  font-family: 'liga';
+  src: url("../font/websymbolsligaregular-webfont-webfont.eot");
+  src: url("../font/websymbolsligaregular-webfont-webfont.eot?#iefix") format("embedded-opentype"), url("../font/websymbolsligaregular-webfont-webfont.woff") format("woff"), url("../font/websymbolsligaregular-webfont-webfont.ttf") format("truetype"), url("../font/websymbolsligaregular-webfont-webfont.svg#web_symbols_ligaregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+#signin {
+  position: relative;
+  background-color: #f4d37a; }
+
+#login {
+  position: absolute;
+  max-width: 240px;
+  height: 180px;
+  top: 50%;
+  left: 50%;
+  margin-left: -120px;
+  margin-top: -90px; }
+
+#login1 {
+  margin: auto;
+  position: absolute;
+  max-width: 240px;
+  height: 180px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+
+#login2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+#login h1 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 200;
+  margin: 5px 0 15px 0; }
+
+.mt {
+  margin-top: 15px; }
+
+#login a {
+  display: block;
+  text-decoration: none;
+  float: right;
+  background-color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  color: #4f3b3b;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+
+#login a:hover {
+  background-color: #cd9c50;
+  color: #fff; }
+
+/*# sourceMappingURL=signin.css.map */

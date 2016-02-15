@@ -1,0 +1,151 @@
+@import '../Import';
+
+.ui_navlist{
+	list-style-type: none;
+	float: left;
+	max-width: 320px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background: $brown;
+	color: $textTwo;
+	@include boxShadow(1px 1px 2px rgba(0,0,0,.55));
+}
+.ui_navlist li{
+	overflow: hidden;
+	height: 103px;
+	border-bottom: 1px solid #372929;
+}
+.ui_navlist div{
+	float: left;
+	height: 100%;
+	background: $yellow;
+	margin-left: -110%;
+	@include transition(margin-left .3s);
+}
+.ui_navlist div.show{
+	margin-left: 0;
+}
+.ui_navlist span{
+	float: right;
+	width: 20px;
+	margin-right: -20px;
+	font-family: "liga";
+	color: $yellow;
+	text-indent: -6px;
+}
+.ui_navlist div a{
+	display: block;
+	width: 70px;
+	height: 35px;
+	line-height: 34px;
+	text-align: center;
+	font-size:25px;
+	font-family: "liga";
+	text-decoration: none;
+	color: $textOne;
+	@include transition(all .3s);
+}
+.ui_navlist div a:hover{
+	background: $darkYellow;
+	color: $textTwo;
+}
+.ui_navlist img{
+	display: block;
+	float: left;
+	border: 5px solid;
+	border-color: #372929;
+	margin: 15px 10px 15px 15px;
+	@include borderRadius(50%);
+	@include transition(all .3s);
+}
+.ui_navlist p{
+	overflow: hidden;
+	height: 67px;
+	line-height: 22px;
+	font-size: 14px;
+	margin: 0;
+	padding: 20px 20px 0 0;
+	@include transition(opacity .3s);
+}
+.ui_navlist li>a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: $textTwo;
+	text-decoration: none;
+	@include transition(all .3s);
+}
+.ui_navlist li>a:hover{
+	background:$yellow;
+	color:$textOne;
+}
+.ui_navlist li>a:hover img{
+	border-color:#ae9757;
+}
+@media screen and (max-width:320px){
+	.ui_navlist span{
+		margin-top: 45px;
+	}
+	.ui_navlist .show~p{
+		opacity: 0;
+	}
+	.ui_navlist .show~img{
+		margin-left: 45px;
+	}
+}
+
+//Search List Navigation
+
+.ui_searchlist .ui_navlist{
+	@include boxShadow(none);
+}
+.ui_searchlist{
+	float: left;
+	max-width: 320px;
+	width: 100%;
+	background:$cream;
+	@include boxShadow(1px 1px 2px rgba(0,0,0,.55));
+}
+.ui_searchlist>span{
+	margin: 0 20px;
+	line-height: 47px;
+	text-align: center;
+	font-family: "liga";
+	font-size:20px;
+	color:$textOne;
+}
+.ui_searchlist>span:first-child{
+	display: block;
+	width: 100%;
+	height: 12px;
+	line-height: 12px;
+	margin: 46px 0 -58px 0;
+	font-size:18px;
+	color: $cream;
+}
+.ui_searchlist>input{
+	padding: 0;
+	margin: 0;
+	width: 65%;
+	line-height: 47px;
+	border:none;
+	background:transparent;
+	font-size:16px;
+	color: $textOne;
+	outline:none;
+}
+.ui_searchlist>div{
+	background:$brown;
+}
+.ui_searchlist .downArrow:before{
+	content:'[';
+	position: absolute;
+	z-index:999;
+	width: 100%;
+	text-align: center;
+	line-height: 10px;
+	font-family:'liga';
+	font-size:18px;
+	color:$cream;
+}

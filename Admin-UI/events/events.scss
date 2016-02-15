@@ -1,0 +1,176 @@
+@import '../import';
+
+#events #menu_side{
+	width:230px;
+	background:$cream;
+}
+
+#events #sub_menu input{
+	width:100%;
+	margin: 0;
+	outline:0;
+	border:0;
+	background:transparent;
+	padding:0 15px 0 45px;
+	line-height: 50px;
+	font-size:15px;
+	border-right: 1px solid $lightGray;
+	border-bottom: 1px solid $lightGray;
+	@include boxSizing();
+	color:$textOne;
+}
+
+#events #sub_menu span{
+	position:absolute;
+	font-family:'liga';
+	color:$brown;
+	font-size:20px;
+	line-height: 50px;
+	margin-left: 20px;
+}
+
+#events #sub_menu a{
+	text-decoration:none;
+	color:$textOne;
+	display:block;
+	width:100%;
+	font-size:14px;
+	line-height: 150%;
+	padding:20px;
+	border-bottom:1px solid $lightGray;
+	@include boxSizing();
+	@include transition(all .3s);
+}
+#events #sub_menu a:hover{
+	background:$brown;
+	color:$textTwo;
+}
+
+.fc-header{
+	background:$cream;
+	line-height:51px;
+	border-collapse:collapse; // collapse will not seperate table cells with space  
+}
+
+.fc-header *,, .fc-content *{
+	margin: 0;
+	padding: 0;
+	border-collapse:collapse;
+}
+
+.fc-header h2{
+	text-align:center;
+	font-size: 16px;
+}
+.fc-button-prev,
+.fc-button-next{
+	font-family:'liga';
+	display:block;
+	text-align:center;
+	@include transition(color .3s);
+}
+
+.fc-button-prev.fc-state-hover,
+.fc-button-next.fc-state-hover{
+	color:$red;
+	cursor:pointer;
+}
+
+.fc-content{
+	@include boxShadow(0px 0px 2px #333);
+}
+.fc-content thead{
+	background:$yellow;
+	font-size:15px;
+	line-height:40px;
+}
+.fc-content td{
+	vertical-align: top;
+	border-left:1px solid #eee;
+	border-bottom:1px solid #eee;
+}
+
+.fc-day-number{
+	color:$textThree;
+	padding:15px;
+	font-size:16px;
+	font-weight: normal;
+}
+.fc-other-month .fc-day-number{
+	color:#ddd;
+}
+.fc-event{
+	text-decoration:none;
+}
+.fc-event-container{
+	margin-top: -12px;
+}
+.fc-event-inner{
+	background:$darkYellow;
+	color:$textTwo;
+	font-size: 12px;
+	padding:3px 5px;
+	@include borderRadius(2px);
+	@include transition(all .3s);
+}
+a.fc-event:hover .fc-event-inner{
+	background:$yellow;
+	color:$textOne;
+}
+.ui-resizable-handle{
+	position:absolute;
+	top:0;
+	right: 0;
+	cursor:ew-resize;
+}
+
+@media screen and (max-width:900px){
+	#events #sub_menu{
+		
+		width:90%;
+		margin: 0 auto;
+		margin-top:7px;
+		background:$cream;
+		// border:1px solid $lightGray;
+		@include boxShadow( 0px 0px 5px rgba(0,0,0,0.3));
+	}
+	#events #menu_side{
+		background:#fff;
+	}
+	#events #sub_menu input{
+		background:#ddd;
+		border:none;
+		@include transition(all .3s);
+	}
+
+	#events #sub_menu input:focus{
+		background:#fff;
+	}
+
+	#events #side_open{
+		border-bottom: none;
+	}
+
+	#events .down_arrow{
+		display: block;
+		width: 100%;
+		position: absolute;
+		font-size: 12px;
+		line-height: normal;
+		top: 87;
+		color:$cream;
+		padding:0;
+	}
+	
+}
+
+@media screen and (max-width:650px){
+	.fc-event-container{
+		margin-top: 1px;
+	}
+	.fc-content thead{
+		background:$yellow;
+		font-size:13px;
+		line-height:21px;
+	}
+}

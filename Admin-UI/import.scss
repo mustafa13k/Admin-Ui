@@ -1,0 +1,133 @@
+//General Colors
+$darkBrown: #361c12;
+$brown:		#4f3b3b;
+$darkRed:   #9d321b;
+$red:       #e56655;
+$darkYellow:#cd9c50;
+$yellow:	#f4d37a;
+$cream:		#f0e9dd;
+$darkGray:  #5c5c5c;
+$lightGray: #bdbbdb;
+
+
+// Text Colors
+$textOne: 	#4f3b3b;
+$textTwo: 	#fff;
+$textThree: #686767;
+
+//Specific
+$ta:	  #ebebeb;
+$taColor: #a8a6a6;
+$divLine: #d7d7d7;
+
+$fontStack1: 'Helvetica',sans-serif,Arial;
+$fontStack2: 'Droid Sans',sans-serif,Arial !important;
+
+//Mixins
+@mixin transition($val){
+	-webkit-transition:$val;
+	-moz-transition:$val;
+	-o-transition:$val;
+	transition:$val;
+}
+@mixin boxShadow($val){
+	-webkit-box-shadow:$val;
+	-moz-box-shadow:$val;
+	box-shadow:$val;
+}
+@mixin boxSizing(){
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+@mixin borderRadius($val){
+	-webkit-border-radius:$val;
+	-moz-border-radius:$val;
+	border-radius:$val;
+}
+
+@import 'reset';
+
+body{
+	position:relative;
+	margin: 0;
+	padding: 0;
+	font-size:16px;
+	-webkit-font-smoothing:antialiased;
+	font-weight:normal;
+	font-family:$fontStack2;
+	color:$textOne;
+	z-index:1;
+}
+
+#colTwo{
+	position: absolute;
+    display: table;
+    float: left;
+    width: 100%;
+    height: 100%;
+    padding-top: 40px;
+    z-index: -1;
+    @include boxSizing();
+}
+
+#colTwo > div{
+	display:table-cell;
+	vertical-align:top;
+	height:100%;
+}
+
+#side_open{
+	display:none;
+}
+
+@media screen and (max-width:900px){
+	#colTwo, #colTwo > div{
+		display: block;
+	}
+
+	#colTwo #menu_side, html#events #menu_side,html#eventp #menu_side{
+		float: left;
+		width: 100%;
+		height:auto; 
+	}
+
+	#sub_menu{
+		display: none;
+	}
+
+	#side_open{
+		display: block;
+		width: 100%;
+		float:left;
+		text-align: center;
+		line-height: 50px;
+		color:$brown;
+		background: $cream;
+		text-decoration:none;
+		border-bottom: 1px solid $lightGray;
+		font-size: 16px;
+		@include transition(all .3s);
+	}
+	#side_open span{
+		font-family: 'liga';
+		position:absolute;
+		left:25px;
+		font-size: 20px;
+	}
+	#side_open:hover{
+		background-color: $yellow;
+	}
+
+	#sub_menu.sub_open{
+		display:block;
+	}
+}
+
+@font-face {
+    font-family: 'liga';
+    src: url("../font/websymbolsligaregular-webfont-webfont.eot");
+    src: url("../font/websymbolsligaregular-webfont-webfont.eot?#iefix") format("embedded-opentype"), url("../font/websymbolsligaregular-webfont-webfont.woff") format("woff"), url("../font/websymbolsligaregular-webfont-webfont.ttf") format("truetype"), url("../font/websymbolsligaregular-webfont-webfont.svg#web_symbols_ligaregular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}

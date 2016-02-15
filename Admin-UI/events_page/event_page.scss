@@ -1,0 +1,129 @@
+@import '../import';
+
+$lightBrown: #6d5252;
+
+#eventp #menu_side{
+	width:223px;
+	background: $cream;
+	@include boxShadow(inset 0 0 3px rgba(0,0,0,.3));
+}
+
+#eventp #sub_menu a{
+	display:table;
+	float:left;
+	text-decoration:none;
+	width:100%;
+	color:$textThree;
+	border-bottom:1px solid $lightGray;
+	@include transition(all .3s);
+}
+
+#eventp #sub_menu a:first-child{
+	line-height: 60px;
+	border-bottom:none;
+	text-align:center;
+	background: $lightBrown;
+	color:$textTwo;
+	@include boxShadow(inset 0 0 3px rgba(0,0,0,.3));
+}
+
+#eventp #sub_menu a:first-child span{
+	font-family:'liga';
+	margin-right:10px;
+}
+
+#eventp #sub_menu a:hover{
+	background: $yellow;
+	color:$textOne;
+	@include boxShadow(inset 0 0 3px rgba(0,0,0,.3));
+}
+
+#eventp #sub_menu a > img,
+#eventp #sub_menu a > p{
+	display:table-cell;
+	vertical-align:middle;
+}
+
+#eventp #sub_menu a > p{
+	font-size: 13px;
+	line-height: 150%;
+}
+#epm > div{
+	width:100%;
+	float:left;
+	display:table;
+	background: $lightBrown;
+	color:$textTwo;
+}
+
+#epm div img{
+	float:left;
+	vertical-align:middle;
+	margin-right: 20px;
+}
+
+.middle{
+	display:table-cell;
+	vertical-align:middle;
+	width:100%;
+
+}
+
+.middle h1{
+	line-height:150%;
+	font-size:20px;
+	letter-spacing:1px;
+}
+.middle small{
+	line-height:150%;
+	font-size:12px;
+}
+
+#epm > img{
+	width:100%;
+	height: auto;
+}
+
+#epm > p{
+	margin: 0;
+	padding:20px 20px 0 20px;
+	color:$textThree;
+	font-size:14px;
+	line-height: 180%;
+}
+#comments li p{
+	font-size:12px;
+	color:$textThree;
+}
+@media screen and (max-width:900px){
+	#eventp #sub_menu a > p{
+		width:100%;
+		padding-left:12px;
+		@include boxSizing();
+	}
+}
+
+@media screen and (max-width:600px){
+	.middle h1{
+		line-height:150%;
+		font-size:16px;
+		letter-spacing:0;
+	}
+}
+
+@media screen and (max-width:400px){
+	.middle h1{
+		line-height:150%;
+		font-weight:bold;
+		font-size:12px;
+		letter-spacing:0;
+	}
+
+	.middle small{
+		font-size:11px;
+		line-height:170%;
+	}
+	#comments li p{
+		padding: 10px 0;
+	}
+}

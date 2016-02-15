@@ -1,0 +1,66 @@
+@import '../import'; 
+
+#signin{
+	position:relative;
+	background-color:$yellow;
+}
+
+#login{
+	// Centering both vertically and horizontally using negative margin approach
+	position:absolute;
+	max-width:240px;
+	height:180px;
+	top:50%;
+	left:50%;
+	margin-left:-120px;
+	margin-top:-90px;
+}
+
+#login1{
+	// Centering both vertically and horizontally using auto margin approach
+	margin:auto;
+	position:absolute;
+	max-width:240px;
+	height:180px;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+}
+
+#login2{
+	// Centering both vertically and horizontally translate when width and height are unknown
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+}
+
+#login h1{
+	text-align:center;
+	font-size:24px;
+	font-weight:200;
+	margin:5px 0 15px 0;
+}
+
+.mt{
+	margin-top: 15px;
+}
+
+#login a{
+	display:block;
+	text-decoration:none;
+	float:right;
+	background-color:$textTwo;
+	padding:10px 20px;
+	text-align:center;
+	color:$textOne;
+	@include borderRadius(30px);
+	@include transition(all .3s);
+}
+
+#login a:hover{
+	background-color:$darkYellow;
+	color:$textTwo;
+}

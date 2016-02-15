@@ -1,0 +1,107 @@
+@import '../import';
+
+$darkGreen:   	#59AE7F;
+$lightGreen:	#64C4AF;
+$blue:			#91CED7;
+$paleGreen:		#CCEBC0;
+$veryPaleGreen:	#D9F5BE;
+
+//Text
+$textOne:#111;
+
+.menu-bar-vertical{
+	max-width:320px;
+	@include boxShadow(1px 1px 3px #777);
+}
+
+
+.search-list{
+	width:320px;
+	background-color:$paleGreen;
+	padding-left:20px;
+	@include boxSizing();
+	position:relative;
+}
+.search-list span+input{
+	outline: none;
+    border: none;
+    color: #111;
+    background-color: inherit;
+    font-size: 18px;
+    margin-left: 30px;
+    width: 80%;
+    padding: 20px 15px;
+}
+
+	
+.search-list > span{
+	font-family:'liga';
+	font-size:20px;
+	color:$darkGreen;
+	line-height:49px;
+}
+
+.search-list > span:nth-child(1){
+	display:block;
+	position:absolute;
+	text-align:center;
+	line-height:25px;
+	left:0;
+	bottom:-17px;
+	width:100%;
+	color:$paleGreen;
+}
+
+.search-list > span:nth-child(2){
+	position:absolute;
+	top:5px;
+	font-size:25px;
+}
+
+
+.ui_navlist{
+	width:320px;
+	// height: 800px;
+	background-color:$darkGreen;
+	// @include boxShadow(1px 1px 5px rgba(0,0,0,0.7));
+}
+
+.ui_navlist img{
+	display:block;
+	float:left;
+	border:5px solid;
+	border-color:#666;
+	@include borderRadius(50px);
+	// margin-top:10px;
+	margin-left:10px;
+}
+
+.ui_navlist li{
+	// height:120px;
+	overflow:hidden;
+	border-bottom:1px solid #666;
+
+}
+.ui_navlist a{
+	display: block;
+	overflow:hidden;
+	color:$textOne;
+	width:100%;
+	font-size:16px;
+	line-height:22px;
+	padding:20px 0;
+	text-decoration:none;
+	@include transition(all .55s ease);
+	
+}
+
+.ui_navlist a:hover{
+	background-color:$blue;
+}
+
+.ui_navlist p{
+	overflow:hidden;
+	font-size:15px;
+	padding-top:12px;
+	padding-left:5px;
+}

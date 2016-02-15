@@ -1,0 +1,187 @@
+/*
+*  html5 doctor css reset | http://html5doctor.com/html-5-reset-stylesheet
+*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #d7d7d7;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  font-weight: normal;
+  font-family: "Droid Sans", sans-serif, Arial;
+  color: #4f3b3b; }
+
+@font-face {
+  font-family: 'liga';
+  src: url("../font/websymbolsligaregular-webfont-webfont.eot");
+  src: url("../font/websymbolsligaregular-webfont-webfont.eot?#iefix") format("embedded-opentype"), url("../font/websymbolsligaregular-webfont-webfont.woff") format("woff"), url("../font/websymbolsligaregular-webfont-webfont.ttf") format("truetype"), url("../font/websymbolsligaregular-webfont-webfont.svg#web_symbols_ligaregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+#profile {
+  background-color: #f0e9dd;
+  color: #686767; }
+
+#profile-header {
+  overflow: hidden;
+  width: 100%;
+  background-color: #fff; }
+
+#profile-header > div {
+  display: table-cell;
+  vertical-align: middle; }
+
+.header-txt * {
+  margin: 0;
+  padding: 0;
+  line-height: 37px;
+  font-weight: 200; }
+
+.header-txt {
+  padding: 0 70px; }
+
+.header-txt h1 {
+  font-size: 20px; }
+
+.header-txt h3 {
+  font-weight: bold;
+  font-size: 13px; }
+
+.header-txt p {
+  font-size: 15px; }
+
+.left {
+  padding: 30px; }
+
+.left,
+.right {
+  display: table-cell;
+  width: 50%;
+  vertical-align: top; }
+
+.left h2 {
+  margin: 0;
+  padding: 0;
+  line-height: 100%;
+  font-size: 18px; }
+
+.left p {
+  padding-top: 20px;
+  font-size: 15px;
+  line-height: 20px; }
+
+.ui_navlist {
+  max-width: 100% !important;
+  width: 100% !important;
+  height: 100%; }
+
+@media screen and (max-width: 768px) {
+  .header-txt {
+    padding: 0 30px; }
+
+  .header-txt * {
+    line-height: 30px; }
+
+  .left,
+  .right {
+    display: block;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; } }
+@media screen and (max-width: 600px) {
+  #profile-header > div {
+    display: block; }
+
+  #profile-header div:first-child {
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    margin: 30px auto 30px auto;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%; }
+
+  #profile-header div:last-child {
+    padding: 0;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #f4d37a; }
+
+  .header-txt * {
+    text-align: center;
+    line-height: 30px; }
+
+  .header-txt h1 {
+    padding-top: 10px; }
+
+  .header-txt h3,
+  .header-txt p {
+    margin-top: 10px; }
+
+  .header-txt p {
+    padding-bottom: 10px; } }
+
+/*# sourceMappingURL=profile.css.map */

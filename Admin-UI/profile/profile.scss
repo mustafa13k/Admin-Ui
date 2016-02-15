@@ -1,0 +1,125 @@
+@import '../import';
+
+#profile{
+	background-color: $cream;
+	color:$textThree;
+}
+
+#profile-header{
+	overflow:hidden;
+	width:100%;
+	background-color:$textTwo;
+}
+
+#profile-header > div{
+	display:table-cell;
+	vertical-align:middle;
+}
+
+.header-txt *{
+	margin: 0;
+	padding: 0;
+	line-height: 37px;
+	font-weight:200;
+}
+
+.header-txt{
+	padding:0 70px;
+}
+
+.header-txt h1{
+	font-size:20px;
+}
+
+.header-txt h3{
+	font-weight:bold;
+	font-size:13px;
+}
+
+.header-txt p{
+	font-size:15px;
+}
+
+.left{
+	padding:30px;
+}
+
+.left,
+.right{
+	display:table-cell;
+	width: 50%;
+	vertical-align:top;
+}
+
+.left h2{
+	margin: 0;
+	padding: 0;
+	line-height:100%;
+	font-size:18px;
+}
+
+.left p{
+	padding-top:20px;
+	font-size:15px;
+	line-height:20px;
+}
+
+.ui_navlist{
+	max-width:100% !important;
+	width:100% !important;
+	height:100%;
+}
+
+@media screen and (max-width:768px){
+	.header-txt{
+		padding:0 30px;
+	}
+
+	.header-txt *{
+		line-height: 30px;
+	}
+
+	.left,
+	.right{
+		display: block;
+		width: 100%;
+		@include boxSizing();
+	}
+}
+
+@media screen and (max-width:600px){
+	#profile-header > div{
+		display: block;
+	}
+	#profile-header div:first-child{
+		overflow: hidden;
+		width:200px;
+		height: 200px;
+		margin: 30px auto 30px auto;
+		@include borderRadius(50%);
+	}
+	#profile-header div:last-child{
+		padding: 0;
+		width:100%;
+		margin: 0 auto;
+		background-color: $yellow;
+	}
+
+	.header-txt *{
+		text-align: center;
+		line-height: 30px;
+	}
+	 
+	.header-txt h1{
+		padding-top: 10px;
+	} 
+
+	.header-txt h3,
+	.header-txt p{
+		margin-top: 10px;
+	}
+
+	.header-txt p{
+		padding-bottom: 10px;
+	}
+}
